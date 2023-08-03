@@ -11,7 +11,7 @@ to implement the binary to decimal conversion logic{ ex- 1011 to decimal will wo
 1*2^3+0*2^2+1*2^1+1*2^0} we reversed the string because to implement the correct power of base 2 
 with binary numbers. it can also be done without reversing it.'''
 
-for i in b:             #b is the reverse string
+for i in b:             #b is the reverse string, b here can also be written as "range(len(b))"
     str_len=len(a)      #calculate the length of the string
     c=int(i)            #converting string to integer so that the calculation can be performed
 
