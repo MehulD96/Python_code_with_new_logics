@@ -3,8 +3,8 @@
 a = input("Enter 1st number:") 		#take input, input s a string not integer
 count = c = 0				#initialise variables
 for i in a:
-	i= int(i)			#start for loop on string and convert 'i' into integer
-					 to perform calculation because  calculation can not be done on string
+	i= int(i)			'''start for loop on string and convert 'i' into integer
+					 to perform calculation because  calculation can not be done on string'''
 	if count > (b:=len(a)):		#walrus operator is used with 'b' 
 		break
 	c= c + pow(i,b)			#calculate sum of the digits of number
