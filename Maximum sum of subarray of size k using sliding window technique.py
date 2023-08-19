@@ -1,7 +1,7 @@
-#slicising window
+#slicing window
 #Maximum sum of subarray of size k
 arr = [1,32,8,4,86,8,7,41]
-window = int(input("enter the window size:"))
+window = int(input("enter the window size of the subarray:"))
 start_size,end_size = 0,0
 sum = 0
 final_list = []
