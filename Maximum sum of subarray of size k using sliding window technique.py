@@ -24,3 +24,32 @@ print("the original list",arr)
 print("the sum from the sliding window:",final_list)
 print("maximum sum:",max(final_list))
 
+
+
+#...........................................................OR....................................................
+
+arr = [1,32,8,4,86,8,7,41]
+window = int(input("enter the window size"))
+sum = 0
+lst = []
+for i in range(len(arr)):
+    for j in range(0,window):
+        if i+j > len(arr)-1 :
+            break
+        elif i<1:
+            sum = sum + arr[i+j]
+        else:
+
+            sum = sum + arr[i + j]
+    if i+window-1 == len(arr):
+        break
+    lst.append(sum)
+    print(sum)
+    sum = 0
+    ##if i-j+1 == len(arr)-1:
+        #break
+
+print("original list",arr)
+print("sum of the sub array",lst)
+print(max(lst))
+
