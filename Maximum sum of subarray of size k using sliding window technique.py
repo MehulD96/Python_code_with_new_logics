@@ -26,7 +26,34 @@ print("maximum sum:",max(final_list))
 
 
 
+
 #...........................................................OR....................................................
+
+
+
+
+# Using another logic
+
+arr = [1,32,8,4,86,8,7,41]
+window = int(input("enter the window size"))
+n = len(arr)
+if n<window:
+    print("invalid entry")
+
+window_sum = sum(arr[:window])
+max_sum = window_sum
+for i in range(n-window):
+     window_sum = window_sum - arr[i] + arr[i+window]
+     max_sum = max(window_sum,max_sum)
+print(max_sum)
+
+
+
+
+
+#...........................................................OR....................................................
+
+# Using Bruteforce techique
 
 arr = [1,32,8,4,86,8,7,41]
 window = int(input("enter the window size"))
